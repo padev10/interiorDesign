@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", Cambria, Georgia, serif;
+}
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Sidebar.css */
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Apply the animation classes based on visibility */
+.slide-in.sidebar {
+  animation: slideIn 0.3s ease-in-out;
+}
